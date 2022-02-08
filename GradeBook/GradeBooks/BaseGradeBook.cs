@@ -127,13 +127,14 @@ namespace GradeBook.GradeBooks
                     gpa = 1;
                     break;
             }
-            return 0;
 
 
             if (IsWeighted && (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled))
             {
                 gpa++;
             }
+
+            return gpa;
 
         }
 
